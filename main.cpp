@@ -178,49 +178,6 @@ void DepthFirstSearch()
     std::cout << "DFS completed " << Answer.size() << "\n";
 }
 
-/*
-bool IsMovePossible(int Move , Vertex *v)
-{
-    if (v->neighbours[Move]->bIsObstacle)
-        return false;
-
-    return true;
-}
-
-void CalculatePath()
-{
-    std::cout << "Path calculation started\n";
-    std::stack<Vertex*> PathStack;
-    
-    int CurrentIndex = 0;
-
-    while (Answer[CurrentIndex] != &Vertices[iEndY * iMapSize + iEndX])
-    {
-
-    }
-
-    std::cout << "Calculation of path done " << PathStack.size()<<"\n";
-}
-for (int i = 0; i < Answer.size(); i++)
-    {
-        for (int move = 0; move < Answer[i]->neighbours.size(); move++)
-        {
-            if (IsMovePossible(move, Answer[i]))
-            {
-                PathStack.push(Answer[move]);
-            }
-            else
-            {
-                if (PathStack.empty())
-                {
-                    std::cout << "No path found\n";
-                    return;
-                }
-                PathStack.pop();
-            }
-        }
-    }*/
-
 void DijkstraAlgo()
 {
     CurrentState = 3;
